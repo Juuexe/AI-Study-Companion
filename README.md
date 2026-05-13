@@ -1,6 +1,6 @@
 ---
 title: AI Study Companion
-emoji: book
+emoji:📚
 colorFrom: green
 colorTo: gray
 sdk: streamlit
