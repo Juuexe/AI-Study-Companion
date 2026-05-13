@@ -1,8 +1,8 @@
 ---
 title: AI Study Companion
-emoji: null
+emoji: book
 colorFrom: green
-colorTo: black
+colorTo: gray
 sdk: streamlit
 sdk_version: "1.32.0"
 app_file: app.py
