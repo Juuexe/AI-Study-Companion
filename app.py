@@ -1,5 +1,5 @@
 import streamlit as st
-import os
+
 from document_parser import extract_text, chunk_text
 from generator import generate_flashcards, generate_quiz, generate_summary
 
@@ -155,9 +155,9 @@ if uploaded:
                 for i, q in enumerate(st.session_state.questions):
                     if st.session_state.answers.get(i) == q["answer"]:
                         st.success(f"Q{i+1}: Correct!")
-                        st.image(os.path.join(os.getcwd(), "static", "right.jpg"))
+                       
                         score += 1
                     else:
                         st.error(f"Q{i+1}: Incorrect — {q['explanation']}")
-                        st.image(os.path.join(os.getcwd(), "static", "wrong.jpg"))
+                        
                 st.info(f"Your score: {score}/{len(st.session_state.questions)}")
